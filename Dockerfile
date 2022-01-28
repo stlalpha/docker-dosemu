@@ -1,5 +1,5 @@
-FROM jgoerzen/supervisor
-MAINTAINER John Goerzen <jgoerzen@complete.org>
+FROM stlalpha/docker-supervisor
+MAINTAINER Jim McBride <jim.mcbride@gmail.com>
 # dosemu is in contrib
 RUN sed -i 's/main/main contrib/g' /etc/apt/sources.list
 # VNC doesn't start without xfonts-base
